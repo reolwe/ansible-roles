@@ -1,2 +1,4 @@
 ---
 # defaults file for buldserver
+work_dir: /home/mikhail/boxfuse/
+git_repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
