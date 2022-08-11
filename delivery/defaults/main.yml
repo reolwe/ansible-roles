@@ -1,2 +1,6 @@
 ---
 # defaults file for delivery
+src_folder: ../
+dest_folder_prod: /var/lib/tomcat9/webapps/
+dest_folder_master: /home/mikhail/
+src_folder_build:  /home/mikhail/boxfuse/target/
