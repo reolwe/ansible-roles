@@ -6,7 +6,7 @@
     - openjdk-8-jdk
     - maven
     - git
-- name: git clone
+- name: git clone boxfuse
   git:
     repo: '{{ git-repo }}'
     dest: '{{ work_dir }}'
