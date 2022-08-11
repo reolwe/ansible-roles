@@ -1,2 +1,18 @@
 ---
 # tasks file for buldserver
+- name: install many packages
+  apt: name={{item}} state=present
+  with_items:
+    - openjdk-8-jdk
+    - maven
+    - git
+- name: git clone
+    git:
+      repo: {{git-repo}}
+      dest: {{work_dir}}
+      clone: yes
+      update: yes
+- name: mvn build
+  command: mvn package
+    args:
+      chdir: {{work_dir}}
