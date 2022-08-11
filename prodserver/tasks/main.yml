@@ -1,2 +1,6 @@
 ---
 # tasks file for prodserver
+ - name: Install tomcat9 package
+      apt:
+        name: tomcat9
+        state: present
