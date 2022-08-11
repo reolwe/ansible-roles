@@ -9,8 +9,8 @@
 
 - name: git clone boxfuse
   git:
-    repo: '{{ git-repo }}'
-    dest: '{{ work_dir }}'
+    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+    dest: /home/mikhail/boxfuse/
     clone: yes
     update: yes
 
