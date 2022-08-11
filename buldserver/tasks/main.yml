@@ -10,7 +10,7 @@
 - name: git clone boxfuse
   git:
     repo: '{{ git_repo }}'
-    dest: /home/mikhail/boxfuse/
+    dest: '{{ work_dir }}'
     clone: yes
     update: yes
 
