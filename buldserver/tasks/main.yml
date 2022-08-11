@@ -14,8 +14,8 @@
     update: yes
 - name: mvn build
   command: mvn package
-    args:
-      chdir: {{work_dir}}
+  args:
+    chdir: {{work_dir}}
 
 - name: Copy artefact to master node
   fetch:
