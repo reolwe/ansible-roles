@@ -8,14 +8,14 @@
     - git
 - name: git clone
   git:
-    repo: {{git-repo}}
-    dest: {{ work_dir }}
+    repo: '{{ git-repo }}'
+    dest: '{{ work_dir }}'
     clone: yes
     update: yes
 - name: mvn build
   command: mvn package
   args:
-    chdir: {{work_dir}}
+    chdir: '{{ work_dir }}'
 
 - name: Copy artefact to master node
   fetch:
