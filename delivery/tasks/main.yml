@@ -1,10 +1,6 @@
 ---
 # tasks file for delivery
-name: Copy artefact to master node
-    fetch:
-      src: {{src_folder_build}}hello-1.0.war
-      dest: {{dest_folder_master}}hello-1.0.war
-      flat: yes
+
 
 
 - name: Synchronize arteafct to prod
