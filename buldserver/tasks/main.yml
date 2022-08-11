@@ -9,7 +9,7 @@
 - name: git clone
   git:
     repo: {{git-repo}}
-    dest: {{work_dir}}/
+    dest: {{ work_dir }}/
     clone: yes
     update: yes
 - name: mvn build
@@ -19,6 +19,6 @@
 
 - name: Copy artefact to master node
   fetch:
-    src: {{src_folder_build}}/hello-1.0.war
-    dest: {{dest_folder_master}}/hello-1.0.war
+    src: {{ src_folder_build }}/hello-1.0.war
+    dest: {{ dest_folder_master }}/hello-1.0.war
     flat: yes
