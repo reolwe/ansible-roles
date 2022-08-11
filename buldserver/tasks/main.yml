@@ -6,12 +6,14 @@
     - openjdk-8-jdk
     - maven
     - git
+
 - name: git clone boxfuse
   git:
     repo: '{{ git-repo }}'
     dest: '{{ work_dir }}'
     clone: yes
     update: yes
+
 - name: mvn build
   command: mvn package
   args:
