@@ -13,7 +13,7 @@
 
   roles:
     - common
-    - prod
+    - prodserver
     - delivery
 
 
