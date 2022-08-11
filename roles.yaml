@@ -14,5 +14,6 @@
   roles:
     - common
     - prod
+    - delivery
 
 
